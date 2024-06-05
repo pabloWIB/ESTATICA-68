@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+
+* {
+  margin:0;
+  padding:0;
+  outline:none;
+  list-style:none;
+  text-decoration:none;
+  box-sizing:border-box;
+  color:#000;
+  background: transparent;
+  border:none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;  
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(50deg, rgb(0, 149, 135) 23%, rgb(32, 149, 242) 100%);
+}
+
+.wrap {
+  height: 300px;
+  position: relative;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.card {
+  height: 300px;
+  width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius:6px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  .content {
+    padding: 3em;
+    h2 {
+      margin: 0 0 20px 0;
+      text-transform:uppercase;
+      font-weight:300;
+      font-size:48px;
+      color: #141414;
+    }
+    p {
+      font-size:1rem;
+      line-height: 1.6rem;
+      color: #141414;
+    }
+  }
+}
+
+.arrow {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: -100px;bottom: 0;
+  right: 0;left: 700px;
+  margin: auto;
+  border-radius:50%;
+  box-shadow:0 3px 10px rgba(0,0,0,0.3);
+  background: #FF244C;
+  cursor:pointer;
+  transition:0.3s all cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+
+
+.active {
+  height: 300px;
+  width: 700px;
+  left: 0;
+  top: 0;
+  border-radius:6px;
+}
